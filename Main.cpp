@@ -20,7 +20,7 @@ int main(int argc, char *argv[]) {
   x = Malloc_Vector_double(2,0);
   for(int i=0;i<ndat;i++) { 
     sscanf(lines[i], "%lf,%lf\n", &x[0], &x[1]);
-    fprintf(stdout, "%lf,%lf,%lf\n", x[0], x[1], muller_brown_potential(x));
+    fprintf(stdout, "%lf,%lf,%lf\n", muller_brown_potential(x), x[0], x[1]);
   }
 
   free(x);
